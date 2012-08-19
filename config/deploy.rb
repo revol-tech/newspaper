@@ -3,7 +3,7 @@ require "bundler/capistrano"
 # Add RVM's lib directory to the load path.
 #$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 # Load RVM's capistrano plugin.
-#require "rvm/capistrano"
+require "rvm/capistrano"
 
 set :application, "newspaper"
 set :repository,  "git@github.com:revol-tech/newspaper.git"
