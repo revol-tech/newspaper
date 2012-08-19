@@ -12,7 +12,7 @@ set :scm, :git
 
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :deploy_to, "/home/deploy/www/newspaper.revol-tech.com.np"
+set :deploy_to, "/home/deploy/newspaper/revol-tech.com.np"
 
 role :web, "newspaper.revol-tech.com.np"                          # Your HTTP server, Apache/etc
 role :app, "newspaper.revol-tech.com.np"                          # This may be the same as your `Web` server
