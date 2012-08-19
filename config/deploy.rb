@@ -3,7 +3,7 @@ require "bundler/capistrano"
 # Add RVM's lib directory to the load path.
 #$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 # Load RVM's capistrano plugin.
-require "rvm/capistrano"
+#require "rvm/capistrano"
 
 set :application, "newspaper"
 set :repository,  "git@github.com:revol-tech/newspaper.git"
@@ -12,7 +12,7 @@ set :scm, :git
 
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :deploy_to, "/home/deploy/newspaper/revol-tech.com.np"
+set :deploy_to, "/home/deploy/www/newspaper.revol-tech.com.np"
 
 role :web, "newspaper.revol-tech.com.np"                          # Your HTTP server, Apache/etc
 role :app, "newspaper.revol-tech.com.np"                          # This may be the same as your `Web` server
@@ -31,7 +31,7 @@ ssh_options[:port] = 2020
 
 
 
-#set :rvm_ruby_string, '1.9.3'
+set :rvm_ruby_string, '1.9.3'
 #set :rvm_type, :user  # Don't use system-wide RVM
 #load 'deploy/assets'
 
