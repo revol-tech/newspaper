@@ -9,6 +9,7 @@ set :application, "newspaper"
 set :repository,  "git@github.com:revol-tech/newspaper.git"
 set :use_sudo, false  #permission conflict resolve
 set :scm, :git
+set :rvm_type, :system
 
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
